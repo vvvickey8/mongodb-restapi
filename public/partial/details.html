@@ -1,0 +1,22 @@
+<div> <span><h2>Contact List</h2></span><span style="float:right"></span></div>
+        <!--<h2>Contact Details</h2> <span style="float:right"><a href="#/create">Create Contact</a></span>-->
+         <table style="width:60%" border="5">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hero in Contacts">
+                    <td>{{hero.id}}</td>
+                    <td>{{hero.name}}</td>
+                    <td>{{hero.email}}</td>
+                    <td>{{hero.phone}}</td>
+                </tr>
+            </tbody>
+        </table> 
+      
+    </div>
