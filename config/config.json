@@ -1,17 +1,35 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql
+    "username": "testing",
+    "password": "testing",
+    "database": "testing",
+    "host": "10.100.1.11",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "instanceName": "DEV"
+    },
+    "define": {
+      "timestamps": false
+    }
   },
   "test": {
-       "username": "root",
+     "username": "testing",
+    "password": "testing",
+    "database": "testing",
+    "host": "10.100.1.11",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "instanceName": "DEV"
+    },
+    "define": {
+      "timestamps": false
+    }
+  },
+  "production": {
+    "username": "root",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
- 
 }
