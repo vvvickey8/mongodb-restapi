@@ -13,6 +13,8 @@ install:
   - sudo apt-get update -q
   - sudo apt-get install -q google-chrome-stable
   - sudo apt-get install lynx
+services:
+  - mssql
   
 before_script:
   - npm install protractor -g
